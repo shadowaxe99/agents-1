@@ -1,0 +1,13 @@
+{
+  "name": "seo_enhancer",
+  "version": "1.0.0",
+  "description": "SEO Enhancer Agent",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
