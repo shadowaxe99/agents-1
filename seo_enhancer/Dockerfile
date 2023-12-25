@@ -2,6 +2,9 @@
 # Use an official Node.js runtime as the base image
 FROM node:14
 
+# Install Python and pip
+RUN apt-get update && apt-get install -y python3 python3-pip
+
 # Set the working directory in the container to /app
 WORKDIR /app
 
@@ -18,5 +21,5 @@ COPY . .
 EXPOSE 8080
 
 # Define the command to run the application
-CMD [ "node", "main.js" ]
+CMD [ "python3", "sweep.py" ]
 ```
